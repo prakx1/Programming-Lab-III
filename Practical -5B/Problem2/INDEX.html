@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="text-align: center">
+    <footer>
+      <h1>Min-Max Calculator</h1>
+      <nav>
+        <a href="algo.html">Algo</a> | <a href="#">complexity</a> |
+        <a href="https://github.com/prakx1">Meet Me</a>
+      </nav>
+    </footer>
+    <hr />
+    <p><strong>Enter the array to find min and max:</strong></p>
+    <form action="">
+      <input
+        type="text"
+        id="arr"
+        placeholder="example:1,2,3,4,5,6,7"
+        required
+      />
+      <button type="button" onclick="myfun()">submit</button>
+    </form>
+    <section text="RED">
+      <p id="inputArray"></p>
+      <p id="result"></p>
+    </section>
+    <hr />
+    <hr />
+    <footer style="text-align: center">
+      <p>&copyCopyright 2020 prax ,<strong>NO</strong> rights Revserved.</p>
+    </footer>
+
+    <script>
+      function myfun() {
+        var input = document.getElementById("arr").value;
+        if (input) {
+          var array = input.split(",");
+          var max = parseInt(array[0]);
+          var min = parseInt(array[0]);
+          for (var i = 0; i < array.length; i++) {
+            current = parseInt(array[i]);
+            if (current > max) {
+              max = current;
+            }
+            if (current < min) {
+              min = current;
+            }
+          }
+          document.getElementById(
+            "inputArray"
+          ).innerHTML = `You have entered:${array}`;
+          document.getElementById(
+            "result"
+          ).innerHTML = `Min=${min} and Max=${max}`;
+        } else {
+          document.getElementById("result").innerHTML = "Empty array!";
+        }
+      }
+    </script>
+  </body>
+</html>

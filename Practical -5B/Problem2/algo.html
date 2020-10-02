@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alog</title>
+  </head>
+  <body text="blue">
+    <h1>Algorithm</h1>
+    <code>
+      function myfun() { <br />
+      var input = document.getElementById("arr").value;<br />
+      if (input) {<br />
+      var array = input.split(",");<br />
+      var max = parseInt(array[0]);<br />
+      var min = parseInt(array[0]);<br />
+      for (var i = 0; i < array.length; i++) {<br />
+      current = parseInt(array[i]);<br />
+      if (current > max) {<br />
+      max = current;<br />
+      }<br />
+      if (current < min) {<br />
+      min = current;<br />
+      }<br />
+      }<br />
+      document.getElementById(<br />
+      "inputArray"<br />
+      ).innerHTML = `You have entered:${array}`;<br />
+      document.getElementById(<br />
+      "result"<br />
+      ).innerHTML = `Min=${min} and Max=${max}`;<br />
+      console.log(array);<br />
+      }<br />
+      }<br />
+    </code>
+  </body>
+</html>
