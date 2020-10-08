@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lelo</title>
+  </head>
+  <body style="text-align: center">
+    <div
+      style="
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        color:firebrick;
+      "
+    >
+      lelo.com <br />
+    </div>
+    <h1>Feedback</h1>
+    <hr />
+    <div id="1" style="margin-left:35%;float:left"> 
+    <fieldset>
+
+      <form action="" onsubmit="popup()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" /> <br /><br />
+        <label for="invoice">Upload Invoice: </label>
+        <input type="file" id="invoce" /> <br /><br />
+        <label for="image">Uplaod image:</label>
+        <input type="file" accept="image/*" id="image" /> <br /><br />
+        <label for="file">Uplaod screenshot</label>
+        <input type="file" /> <br />
+        <br />
+        <label for="feedback">Give your feedback:</label> <br /><br />
+        <textarea
+          id="feedback"
+          row="40"
+          col="20"
+          placeholder="Write something..."
+          required
+        ></textarea
+        ><br /><br />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </fieldset>
+    <div>
+  </body>
+  <script>
+      var popup= function (){
+          alert("Thank you for feedback.")
+      }
+  </script>
+</html>
