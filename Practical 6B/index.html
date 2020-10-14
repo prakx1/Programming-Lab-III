@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      .form {
+        width: 50%;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: auto;
+        color: wheat;
+      }
+    </style>
+  </head>
+  <body style="background-color: royalblue">
+    <footer style="text-align: center">
+      <img src="icons/upsc2.jpeg" alt="Upsc" width="75%" height="400" />
+    </footer>
+
+    <div class="form">
+      <h1>UPSC REGISTRATION 2020-21</h1>
+      <hr />
+      <form action="message.html" autocomplete="on">
+        <fieldset>
+          <legend>Student Information</legend>
+          <label for="name">First Name :</label>
+          <input type="text" required placeholder="Enter name" /><br /><br />
+          <label for="name">Middle Name:</label>
+          <input type="text" placeholder="Middle name" /><br /><br />
+          <label for="name">Last Name:</label>
+          <input type="text" required placeholder="Last name" /><br /><br />
+          <label for="name">Mother's Name:</label>
+          <input type="text" required placeholder="Mother's name" /><br /><br />
+          <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <br />
+          <label for="number">Mobile no.:</label>
+          <input type="number" required placeholder="Mobile no." /><br /><br />
+          <label for="number">E-mail id:</label>
+          <input type="email" required placeholder="E-mail id" /><br /><br />
+          <label for="name">Address:</label> <br />
+          <textarea
+            placeholder="Your address..."
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Educational Information</legend>
+          <label for="Qualification">Your Qualification:</label>
+          <select name="Qualification" id="Qualification" required size="1">
+            <option value="">B.Tech</option>
+            <option value="">M.Tech</option>
+            <option value="">B.E.</option>
+            <option value="">B.Com</option>
+            <option value="">B.Sc</option>
+          </select>
+          <br />
+          <br />
+          <label for="Branch">Branch:</label>
+          <select name="Branch" id="Branch" required size="1" multiple>
+            <option value="">Civil</option>
+            <option value="">CSE</option>
+            <option value="">IT</option>
+            <option value="">EEE</option>
+            <option value="">ELE</option>
+            <option value="">Mech</option>
+          </select>
+          <br />
+          <br />
+          <label for="College">Select your college:</label>
+          <input list="colleges" name="College" />
+          <datalist id="colleges">
+            <option value="LadySiram">LadySiram</option>
+            <option value="WCE">WCE</option>
+            <option value="MIT">MIT</option>
+            <option value="NIT">NIT</option>
+            <option value="IIT">IIT</option>
+          </datalist>
+          <br />
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend>Exam preferences</legend>
+          <label for="subject">Choose your subject:</label> <br />
+          <select name="subject" id="subject" required>
+            <option value="Engeenering">Engeenering</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Animal Husbandry and Veterinary Science">
+              Animal Husbandry and Veterinary Science
+            </option>
+            <option value="Anthropology">Anthropology</option>
+            <option value="Botany">Botany</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Commerce & Accountancy">
+              Commerce & Accountancy
+            </option>
+            <option value="Economics">Economics</option>
+            <option value="Electrical Engineering	">
+              Electrical Engineering
+            </option>
+            <option value="Geography">Geography</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Electrical Engineering">
+              Electrical Engineering
+            </option></select
+          ><br />
+          <br />
+          <label for="Examcity">Select exam city: </label><br />
+          <select name="Examcity" id="">
+            <optgroup label="Arunachal Pradesh">
+              <option value="Itanagar">Itanagar</option>
+              <option value="Tezu">Tezu</option>
+              <option value="Namsai">Namsai</option>
+              <option value="Passighat">Passighat</option>
+            </optgroup>
+            <optgroup label="Uttar Pradesh">
+              <option value="Varanasi">Varanasi</option>
+              <option value="Lucknow">Lucknow</option>
+            </optgroup>
+            <optgroup label="Maharashtra">
+              <option value="Pune">Pune</option>
+              <option value="Sangli">Sangli</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Kolhapur">Kolhapur</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <div style="text-align: center">
+          <input
+            type="image"
+            width="48"
+            height="48"
+            src="icons//3143361.svg"
+            alt="submit"
+          />
+          <input
+            src="icons//889719.svg"
+            type="image"
+            alt="reset"
+            width="48"
+            height="48"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
