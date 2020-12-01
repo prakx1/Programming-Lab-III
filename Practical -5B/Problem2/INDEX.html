@@ -4,18 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body{
+        background-color: black;
+        color: green;
+        padding-left: 10%;
+        padding-right: 10%;;
+      }
+      header{
+        padding: 20px;
+
+      }
+      a:hover{
+        background-color: white;
+        font-size: 150%;
+
+      }
+      .calculate{
+        color: beige;
+      border: 2px solid rgb(9, 134, 36);
+      padding: 20px;
+      background-color: rgb(13, 110, 14,0.5);
+      }
+      footer{
+        padding: 20px;
+        margin: 20px red;
+      }
+    </style>
   </head>
   <body style="text-align: center">
-    <footer>
+    <header>
       <h1>Min-Max Calculator</h1>
       <nav>
         <a href="algo.html">Algo</a> | <a href="#">complexity</a> |
         <a href="https://github.com/prakx1">Meet Me</a>
       </nav>
-    </footer>
-    <hr />
+    </header>
+    <div class="calculate">
     <p><strong>Enter the array to find min and max:</strong></p>
-    <form action="">
+    <form class="form" action="">
       <input
         type="text"
         id="arr"
@@ -24,12 +51,12 @@
       />
       <button type="button" onclick="myfun()">submit</button>
     </form>
+  </div>
     <section text="RED">
       <p id="inputArray"></p>
       <p id="result"></p>
     </section>
-    <hr />
-    <hr />
+
     <footer style="text-align: center">
       <p>&copyCopyright 2020 prax ,<strong>NO</strong> rights Revserved.</p>
     </footer>
